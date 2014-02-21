@@ -14,6 +14,12 @@ Development
 To be filled
 
 
+Todo
+------
+
+- Add Gruntfile
+- Build a small demo game
+
 Contributing
 -------------
 
