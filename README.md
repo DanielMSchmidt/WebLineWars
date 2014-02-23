@@ -6,12 +6,15 @@ We want to build a Hero Line Wars Version, which runs in the browser (responsive
 Getting Started
 ----------------
 
-To be filled
+Just run ```grunt build``` to get a ready to run version in the dist directory. Copy it to your webserver and be happy!
 
 Development
 ------------
 
-To be filled
+1. Make sure [node](http://nodejs.org/) is installed (at least version 0.4.0)
+2. Install Grunt globally with ```npm install -g grunt-cli```
+3. Run ```npm install``
+4. Start your development server with ```grunt server```
 
 
 Todo
@@ -27,4 +30,4 @@ Contributing
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+5. Submit a pull request
