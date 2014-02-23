@@ -20,7 +20,7 @@ module.exports = function (grunt) {
       watch: {
         src: {
           files: ['src'],
-          tasks: ['build'],
+          tasks: ['build']
         }
       },
 
@@ -32,19 +32,18 @@ module.exports = function (grunt) {
       },
 
       connect: {
-        server: {
+        options: {
+          port: 9000,
+          livereload: 35729,
+          // Change this to '0.0.0.0' to access the server from outside
+          hostname: 'localhost'
+        },
+        dist: {
           options: {
-            port: 8000,
-            hostname: '0.0.0.0',
             open: true,
-            base: 'dist',
-            directory: 'dist'
+            base: 'dist'
           }
         }
-      },
-
-      concurrent: {
-        server: ['connect:server', 'watch:src']
       },
 
       copy: {
@@ -57,11 +56,25 @@ module.exports = function (grunt) {
               '*.html'
             ]
           }]
+        },
+
+        styles: {
+          expand: true,
+          dot: true,
+          cwd: 'src/styles',
+          dest: 'dist/styles/',
+          src: '{,*/}*.css'
         }
       },
 
       clean: {
         dist: ['dist/*']
+      },
+
+      concurrent: {
+        server: [
+          'copy:styles'
+        ],
       }
     });
 
@@ -71,8 +84,14 @@ module.exports = function (grunt) {
       'copy:dist'
     ]);
 
-    grunt.registerTask('default', [
+    grunt.registerTask('server', [
       'build',
-      'concurrent:server'
+      'concurrent:server',
+      'connect:dist',
+      'watch'
+    ]);
+
+    grunt.registerTask('default', [
+      'server'
     ]);
 };
