@@ -1,18 +1,20 @@
 WebLineWars
 ============
 
-We want to build a Hero Line Wars Version, which runs in the browser (responsive would be nice). It will be possible to play with others via webrtc.
+We want to build a Hero Line Wars Version, which runs in the browser. It should
+be possible to play with others via webrtc.
 
 Getting Started
 ----------------
 
-To be filled
+1. Install the Turbulenz SDK for your platform
+2. Copy ``jslib`` from the SDK into this directory
+3. Run ``make.sh`` to create game files.
 
 Development
 ------------
 
-To be filled
-
+Run ``make_debug.sh`` to create debug files.
 
 Contributing
 -------------
