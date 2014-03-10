@@ -14,7 +14,10 @@ Getting Started
 Development
 ------------
 
-Run ``make_debug.sh`` to create debug files.
+Make sure all steps of Gettings Started are done.
+
+1. Run ``npm install``
+2. Start your development server with ``grunt server``
 
 Contributing
 -------------
