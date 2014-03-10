@@ -1,0 +1,19 @@
+aspect_ratio: '16:9'
+canvas_main: wlw.canvas.js
+cover_art: ''
+deploy_files:
+- wlw.tzjs
+- wlw.canvas.js
+deployed: Never
+engine_version: '0.28'
+flash_main: ''
+has_notifications: false
+is_multiplayer: true
+is_temp: false
+mapping_table: ''
+modified: 20:41 | 10/03/2014
+path: WebLineWars
+plugin_main: wlw.tzjs
+slug: web-line-wars
+title: WebLineWars
+title_logo: ''

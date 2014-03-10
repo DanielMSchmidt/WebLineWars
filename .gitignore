@@ -1,5 +1,3 @@
-# Created by http://www.gitignore.io
-
 ### OSX ###
 .DS_Store
 .AppleDouble
@@ -8,16 +6,12 @@
 # Icon must ends with two \r.
 Icon
 
-
 # Thumbnails
 ._*
 
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-
-#!! ERROR:  is undefined. Use list command to see defined gitignore types !!#
 
 ### Node ###
 lib-cov
@@ -38,7 +32,11 @@ build
 
 node_modules
 
-
 ### Linux ###
 *~
 
+### Turbulenz ###
+jslib/
+wlw.canvas.debug.html
+wlw.canvas.html
+wlw.canvas.js
