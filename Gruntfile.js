@@ -19,7 +19,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
       watch: {
         src: {
-          files: ['src'],
+          files: ['src/*'],
           tasks: ['build']
         }
       },
