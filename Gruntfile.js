@@ -19,7 +19,16 @@ module.exports = function (grunt) {
       watch: {
         dev: {
           files: ['*.js'],
-          tasks: ['shell:dev']
+          tasks: ['shell:dev'],
+          options: {
+            livereload: true
+          }
+        },
+        livereload: {
+          options: {
+            livereload: '<%= connect.options.livereload %>'
+          },
+          files: ['<%= {,*/}*.html']
         }
       },
 
@@ -45,7 +54,7 @@ module.exports = function (grunt) {
         },
         dev: {
           options: {
-            open: 'wlw.canvas.debug.html'
+            open: 'http://127.0.0.1:9000/wlw.canvas.debug.html'
           }
         }
       },
